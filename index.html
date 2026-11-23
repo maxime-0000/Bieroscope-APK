@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BieroScope</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#0056A6" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p>Catalogue documentaire</p>
+        <h1>BieroScope</h1>
+        <p>Explorez les fiches du catalogue Punk API.</p>
+      </header>
+      <form id="recherche-form">
+        <label for="nom">Nom à rechercher</label>
+        <input id="nom" name="nom" placeholder="Ex. : punk" />
+        <button type="submit">Rechercher</button>
+      </form>
+      <nav aria-label="Actions du catalogue">
+        <button id="charger" type="button">Charger le catalogue</button>
+        <button id="aleatoire" type="button">Fiche au hasard</button>
+        <button id="install" type="button">Installer l’application</button>
+      </nav>
+      <p id="statut" role="status" aria-live="polite"></p>
+      <section id="catalogue" aria-label="Fiches du catalogue"></section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f7f3ea;
+  color: #282218;
+  font-family: system-ui, sans-serif;
+}
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+header {
+  margin-bottom: 24px;
+}
+h1 {
+  color: #6e4211;
+}
+form,
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+input,
+button {
+  padding: 12px;
+  font: inherit;
+  border-radius: 8px;
+}
+input {
+  border: 1px solid #82755f;
+}
+button {
+  background: #6e4211;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+#statut {
+  min-height: 28px;
+}
+#catalogue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 20px;
+}
+.carte {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+.carte img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+.erreur {
+  color: #a21a1a;
+  font-weight: bold;
+}
